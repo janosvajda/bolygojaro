@@ -8,9 +8,6 @@ enum Directions {
     East = "E",
 }
 
-import {Plataeu} from '../../src/class/Plataeu';
-
-
 export class Rover {
 
     private direction: string;
@@ -101,16 +98,16 @@ export class Rover {
     MoveForward() {
         switch (this.direction) {
             case Directions.North:
-                    this.y = this.y + 1;
+                this.y = this.y + 1;
                 break;
             case Directions.East:
-                    this.x = this.x + 1;
+                this.x = this.x + 1;
                 break;
             case Directions.South:
-                    this.y = this.y - 1;
+                this.y = this.y - 1;
                 break;
             case Directions.West:
-                    this.x = this.x - 1;
+                this.x = this.x - 1;
                 break;
         }
     }

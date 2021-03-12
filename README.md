@@ -1,4 +1,15 @@
-# Mars Rover kata
+# The Mars Rover kata in TypeScript
+
+This is a TypeScript solution for the Mars rover kata. The code is not refactorized and cleaned as it was made for a test. 
+
+### Running test:
+`npm install
+`
+
+`npm run test
+`
+
+### Task
 
 A squad of robotic rovers are to be landed by NASA on a plateau on Mars. This plateau, which is curiously rectangular, must be navigated by the rovers so that their on-board cameras can get a complete view of the surrounding terrain to send back to Earth
 
@@ -8,7 +19,7 @@ In order to control a rover, NASA sends a simple string of letters. The possible
 
 Assume that the square directly North from (x, y) is (x, y+1).
 
-INPUT
+### INPUT
 
 The first line of input is the upper-right coordinates of the plateau, the lower-left coordinates are assumed to be 0,0.
 
@@ -16,14 +27,13 @@ The rest of the input is information pertaining to the rovers that have been dep
 
 Each rover will be finished sequentially, which means that the second rover won’t start to move until the first one has finished moving.
 
-
-OUTPUT
+### OUTPUT
 
 The output for each rover should be its final coordinates and heading.
 
-EXAMPLE
+### EXAMPLE
 
-Test Input:
+##### Test Input:
 
 5 5
 1 2 N
@@ -31,6 +41,6 @@ LMLMLMLMM
 3 3 E
 MMRMMRMRRM
 
-Expected output:
+##### Expected output:
 1 3 N
 5 1 E
